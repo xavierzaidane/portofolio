@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,28 +12,31 @@ export default function Footer() {
           <span className="hidden md:inline">·</span>
           <span className="opacity-70">© {new Date().getFullYear()}</span>
         </div>
-        <nav className="flex gap-6 text-zinc-400 text-sm">
+        <nav className="flex gap-6 text-zinc-400">
           <Link
             href="https://github.com/xavierzaidane"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
+            aria-label="GitHub"
           >
-            GitHub
+            <Github size={20} />
           </Link>
           <Link
             href="https://linkedin.com/in/xavierzaidane"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <Linkedin size={20} />
           </Link>
           <Link
             href="mailto:xavierzaidane@gmail.com"
             className="hover:text-white transition-colors"
+            aria-label="Email"
           >
-            Email
+            <Mail size={20} />
           </Link>
         </nav>
       </div>
