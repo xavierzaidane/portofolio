@@ -15,6 +15,7 @@ import { cancelFrame, frame } from "motion/react";
 import Project from "@/components/hero/Project";
 import { Contact } from "@/components/hero/Contact";
 import Education from "@/components/hero/Education";
+import Awards from "@/components/hero/Awards";
 
 export default function HomePage() {
   const lenisRef = useRef<LenisRef>(null);
@@ -52,7 +53,9 @@ export default function HomePage() {
               <Education />
               <Skills />
               <Project />
+              <Awards />
               <Contact />
+
             </main>
           </div>
           <Footer />
