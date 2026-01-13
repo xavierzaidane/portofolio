@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CometCard } from "../ui/comet-card";
+import { LiquidButton } from "../animate-ui/components/buttons/liquid";
 
 export default function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLElement>, link: string) => {
@@ -58,20 +59,23 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <button
+            <LiquidButton
+              variant="default"
+              size="default"
               onClick={(e) => handleNavClick(e, "#contact")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-white text-black hover:bg-white/90 h-10 rounded-md px-6 cursor-pointer"
-              type="button"
             >
               Start a project
-            </button>
-            <button
+            </LiquidButton>
+            <LiquidButton
+              variant="ghost"
+              size="default"
               onClick={(e) => handleNavClick(e, "#projects")}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all border border-white/30 bg-transparent text-white hover:bg-white/10 h-10 rounded-md px-6 cursor-pointer"
-              type="button"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all border border-white/20 bg-white/5 text-white hover:bg-white/10 h-10 rounded-md px-6 cursor-pointer"
+              
             >
               View projects
-            </button>
+            </LiquidButton>
           </motion.div>
         </div>
 

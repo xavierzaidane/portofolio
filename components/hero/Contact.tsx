@@ -2,6 +2,7 @@
 import { motion, useAnimation } from "motion/react";
 import { useRef, useEffect } from "react";
 import { useInView } from "motion/react";
+import { LiquidButton } from "../animate-ui/components/buttons/liquid";
 
 export function Contact() {
   const ref = useRef(null);
@@ -16,9 +17,8 @@ export function Contact() {
 
   return (
     <div className="flex items-center justify-center h-[40rem]" id="contact">
-      
       <motion.div
-      id="contact"
+        id="contact"
         ref={ref}
         initial={{ opacity: 0, y: 60 }}
         animate={controls}
@@ -36,19 +36,27 @@ export function Contact() {
           reply within a day with a plan on how I can help.
         </p>
         <div className="mt-6 flex flex-col items-center justify-center gap-3 md:flex-row md:flex-wrap">
-          <a
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-primary text-primary-foreground hover:bg-primary/90 h-10 rounded-md px-6 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] border-white/30"
-            href="mailto:xavierzaidane@gmail.com"
+          <LiquidButton
+            variant="ghost"
+            size="default"
+            asChild
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-white text-white hover:bg-white/90 border border-white/20 h-10 rounded-md px-6 cursor-pointer"
           >
-            Email me
-          </a>
-          <a
-            target="__blank"
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 border-white/30 text-foreground"
-            href="/documents/Xavier_Zaidane_Athaya_Resume.pdf"
+            <a href="mailto:xavierzaidane@gmail.com">Email me</a>
+          </LiquidButton>
+          <LiquidButton
+            variant="default"
+            size="default"
+            asChild
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-white text-black hover:bg-white/90 h-10 rounded-md px-6 cursor-pointer"
           >
-            Download My Resume
-          </a>
+            <a
+              target="_blank"
+              href="/documents/Xavier_Zaidane_Athaya_Resume.pdf"
+            >
+              Download My Resume
+            </a>
+          </LiquidButton>
         </div>
       </motion.div>
     </div>

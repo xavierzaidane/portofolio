@@ -102,7 +102,7 @@ export const LoadingScreen = ({
                   height={65}
                   className="opacity-90"
                 />
-                <div className="h-10 w-[1px] bg-zinc-700" />
+             
                 <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
                   Xavier
                 </h1>
