@@ -21,13 +21,13 @@ export default function Skills() {
     return (
         <motion.section
             id="skills"
-            className="py-23"
+            className="py-16"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <div className="mx-auto max-w-5xl px-6">
+            <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
                 <motion.div
                     className="text-left mb-12"
                     initial={{ opacity: 0, x: -30 }}
@@ -46,7 +46,7 @@ export default function Skills() {
                     </p>
                 </motion.div>
 
-                <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
                     {[
                         {
                             title: "Next.js",
