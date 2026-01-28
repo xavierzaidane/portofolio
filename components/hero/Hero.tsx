@@ -93,7 +93,7 @@ export default function Hero() {
                     loading="lazy" 
                     className="h-auto w-full rounded-[16px]"
                     alt="Xavier"
-                    src="/duduk.jpg"
+                    src="/pas foto.jpg"
                   />
                 </div>
               </div>

@@ -66,7 +66,7 @@ export default function Experience() {
               </motion.span>
 
               <span className="text-xs uppercase tracking-widest text-zinc-500">
-                November 2025 – Present
+                November 2025 – January 2026
               </span>
 
               <h3 className="mt-2 text-xl font-semibold text-white">
@@ -109,7 +109,7 @@ export default function Experience() {
               </span>
 
               <h3 className="mt-2 text-xl font-semibold text-white">
-                Co Founder / Fullstack Developer
+                Co Founder / Chief Technology Officer (CTO)
               </h3>
 
               <p className="text-sm font-medium text-zinc-300">

@@ -122,42 +122,7 @@ export default function Education() {
               </p>
             </motion.div>
 
-            {/* Education Item 3 */}
-            <motion.div
-              className="relative pl-16 md:pl-20"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.35 }}
-            >
-              {/* Icon */}
-              <motion.span
-                className="absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-zinc-900"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.4, delay: 0.45, type: "spring", stiffness: 200 }}
-              >
-                <img src="/stetsa.jpg" alt="anastasya bouquet" className="rounded-full" />
-              </motion.span>
-
-              <span className="text-xs uppercase tracking-widest text-zinc-500">
-                February 2024 – August 2025
-              </span>
-
-              <h3 className="mt-2 text-xl font-semibold text-white">
-                SMAN 4 Malang
-              </h3>
-
-              <p className="text-sm font-medium text-zinc-300">
-                Science Major
-              </p>
-
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-zinc-400">
-                Graduated with a focus on science subjects, laying a strong foundation
-                for future studies in computer science and engineering.
-              </p>
-            </motion.div>
+          
           </div>
         </div>
       </div>
